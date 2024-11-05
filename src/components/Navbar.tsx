@@ -6,26 +6,34 @@ import React, { useState } from "react";
 
 export const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [servicesDropdown, setServicesDropdown] = useState(false);
   const pathname = usePathname();
 
   const links = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About us" },
-    { href: "/services", label: "Services" },
+    { label: "Services", dropdown: true },
     { href: "/contact", label: "Contact" },
   ];
 
-  const isActive = (href: string) => pathname === href;
+  const servicesLinks = [
+    { href: "/web-development", label: "Web Development" },
+    { href: "/mob-development", label: "Mobile Development" },
+    { href: "/services/service3", label: "UI/UX Design" },
+    { href: "/zoho-crm", label: "Zoho CRM" },
+    { href: "/finance-account", label: "Finances & Accounting" },
+  ];
+
+  const isActive = (href) => pathname === href;
 
   return (
-    <nav className=" border-gray-200 bg-white shadow-md">
-      <div className="xs:w-full sm:w-full lg:w-[90%] flex flex-wrap items-center justify-between mx-auto p-1 sm:p-4 relative">
+    <nav className="border-gray-200 bg-white shadow-md dark:bg-gray-900 dark:border-gray-700">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
         <Link href="/" passHref>
-          {/* <div className="flex items-center cursor-pointer gap-1"> */}
-          <div className="relative w-24 h-12 md:w-32 md:h-16 lg:w-48 lg:h-24">
+          <div className="relative w-24 h-12 cursor-pointer flex items-center space-x-3">
             <Image
               src="/images/logo.svg"
-              alt="Flowbite Logo"
+              alt="BitCloud Logo"
               fill
               sizes="(max-width: 768px) 100px, (max-width: 1200px) 50vw, 33vw"
               className="object-contain"
@@ -35,13 +43,14 @@ export const Navbar = () => {
 
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-200 "
-          aria-controls="navbar-default"
+          data-collapse-toggle="navbar-dropdown"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700"
+          aria-controls="navbar-dropdown"
           aria-expanded={menu}
           onClick={() => setMenu(!menu)}
         >
           <svg
-            className="w-3.5 sm:w-6 h-3.5 sm:h-6"
+            className="w-5 h-5"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -58,27 +67,55 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`absolute top-full left-0 w-full z-50 transition-all duration-500 ease-in-out bg-gray-50 ${
-            menu ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-          } overflow-hidden md:relative md:max-h-full md:opacity-100 md:w-auto md:flex md:bg-transparent dark:md:bg-transparent`}
-          id="navbar-default"
+          className={`${menu ? "block" : "hidden"} w-full md:block md:w-auto mob-nav-style`}
+          id="navbar-dropdown"
         >
-          <ul className="font-medium flex flex-col sm:p-4 md:p-0 mt-4 md:mt-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0 dark:border-gray-700">
-            {links.map(({ href, label }) => (
-              <li key={href}>
-                <Link href={href} passHref>
-                  <span
-                    onClick={() => setMenu(false)} // Close the menu on click
-                    className={`block py-2 px-3 rounded ${
-                      isActive(href)
-                        ? "text-blue-600 md:bg-transparent hover:text-black hover:bg-gray-200 md:dark:text-blue-500"
-                        : "text-black hover:bg-gray-200"
-                    }`}
-                  >
-                    {label}
-                  </span>
-                </Link>
-              </li>
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800">
+            {links.map(({ href, label, dropdown }) => (
+             <li
+             key={label}
+             className="relative"
+             onMouseEnter={dropdown ? () => setServicesDropdown(true) : null}
+             onMouseLeave={dropdown ? () => setServicesDropdown(false) : null}
+           >
+             {dropdown ? (
+               <span
+                 className="block py-2 px-3 rounded cursor-pointer text-gray-900 dark:text-white"
+               >
+                 {label}
+               </span>
+             ) : (
+               <Link href={href} passHref>
+                 <span
+                   className={`block py-2 px-3 rounded cursor-pointer ${
+                     isActive(href)
+                       ? "text-blue-700 dark:text-blue-500"
+                       : "text-gray-900 dark:text-white"
+                   }`}
+                 >
+                   {label}
+                 </span>
+               </Link>
+             )}
+             {dropdown && servicesDropdown && (
+               <div className="z-50 absolute left-0 top-full w-48 bg-white border border-gray-200 shadow-lg rounded-lg">
+                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-400">
+                   {servicesLinks.map(({ href, label }) => (
+                     <li key={href}>
+                       <Link href={href} passHref>
+                         <span
+                           onClick={() => setServicesDropdown(false)}
+                           className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                         >
+                           {label}
+                         </span>
+                       </Link>
+                     </li>
+                   ))}
+                 </ul>
+               </div>
+             )}
+           </li>
             ))}
           </ul>
         </div>
@@ -86,3 +123,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;

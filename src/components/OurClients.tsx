@@ -32,7 +32,7 @@ const OurClients = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="relative text-center p-10 max-w-[80%]"
+            className="relative text-center p-10 xs:w-full sm:w-full lg:w-[90%] custom-cards-ourClient"
           >
             <div className="z-10">
               <div className="w-full flex justify-center ">
