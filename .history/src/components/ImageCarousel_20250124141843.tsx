@@ -70,11 +70,7 @@ export const ImageCarousel = () => {
         // showItemNavigators
         item={itemTemplate}
         autoPlay={true}
-        // transitionOptions={{ easing: 'ease-in-out', duration: 1000 }}
-        transitionOptions={{
-          classNames: 'fade',
-          timeout: { enter: 1000, exit: 1000 },
-        }}
+        transitionOptions={{ easing: 'ease-in-out', duration: 1000 }}
       />
     </div>
   );

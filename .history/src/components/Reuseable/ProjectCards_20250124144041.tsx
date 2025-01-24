@@ -23,7 +23,7 @@ interface ProjectCardProps {
   image: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, image }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, image }) => {
   return (
     <div className="border p-4 rounded-lg shadow-md text-center recent-projects-cards">
       <img
@@ -36,5 +36,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, image }) =
     </div>
   );
 };
-
-export default ProjectCard

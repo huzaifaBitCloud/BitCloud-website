@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
@@ -8,13 +9,7 @@ export const Navbar = () => {
   const [servicesDropdown, setServicesDropdown] = useState(false);
   const pathname = usePathname();
 
-  interface LinkType {
-    href: string;
-    label: string;
-    dropdown?: boolean; // Optional dropdown property
-  }
-
-  const links: LinkType[] = [
+  const links = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About us" },
     { href: "/services", label: "Services" },
@@ -33,26 +28,27 @@ export const Navbar = () => {
   // const isActive = (href) => pathname === href;
   const isActive = (href: string): boolean => pathname === href;
 
+
   return (
     <nav className="border-gray-200 bg-white shadow-md dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
         {/* <Link href="/" passHref> */}
-        <div className="relative w-36 h-12 cursor-pointer flex items-center space-x-3">
-          <Link href="/">
+          <div className="relative w-36 h-12 cursor-pointer flex items-center space-x-3">
+          <Link href='/'>
             <img
               src="/images/logo.svg"
               alt="BitCloud Logo"
               className="h-14 mr-3"
             />
-          </Link>
-          {/* <Image
+            </Link>
+            {/* <Image
               src="/images/logo.svg"
               alt="BitCloud Logo"
               fill
               sizes="(max-width: 768px) 100px, (max-width: 1200px) 50vw, 33vw"
               className="object-contain"
             /> */}
-        </div>
+          </div>
         {/* </Link> */}
 
         <button
@@ -81,63 +77,10 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={`${
-            menu ? "block" : "hidden"
-          } w-full md:block md:w-auto mob-nav-style`}
+          className={`${menu ? "block" : "hidden"} w-full md:block md:w-auto mob-nav-style`}
           id="navbar-dropdown"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800">
-            {links.map(({ href, label, dropdown }) => (
-              <li
-                key={label}
-                className="relative"
-                onMouseEnter={
-                  dropdown ? () => setServicesDropdown(true) : undefined
-                }
-                onMouseLeave={
-                  dropdown ? () => setServicesDropdown(false) : undefined
-                }
-              >
-                {dropdown ? (
-                  <span className="block py-2 px-3 rounded cursor-pointer text-gray-900 dark:text-white">
-                    {label}
-                  </span>
-                ) : (
-                  <Link href={href} passHref>
-                    <span
-                      className={`block py-2 px-3 rounded cursor-pointer ${
-                        isActive(href)
-                          ? "text-blue-700 dark:text-blue-500"
-                          : "text-gray-900 dark:text-white"
-                      }`}
-                    >
-                      {label}
-                    </span>
-                  </Link>
-                )}
-                {dropdown && servicesDropdown && (
-                  <div className="z-50 absolute left-0 top-full w-48 bg-white border border-gray-200 shadow-lg rounded-lg">
-                    <ul className="py-2 text-sm text-gray-700 dark:text-gray-400">
-                      {servicesLinks.map(({ href, label }) => (
-                        <li key={href}>
-                          <Link href={href} passHref>
-                            <span
-                              onClick={() => setServicesDropdown(false)}
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                            >
-                              {label}
-                            </span>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
-          ;
-          {/* <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800">
             {links.map(({ href, label, dropdown }) => (
              <li
              key={label}
@@ -184,7 +127,7 @@ export const Navbar = () => {
              )}
            </li>
             ))}
-          </ul> */}
+          </ul>
         </div>
       </div>
     </nav>
