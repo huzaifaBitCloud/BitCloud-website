@@ -9,16 +9,32 @@ export const Navbar = () => {
   const [servicesDropdown, setServicesDropdown] = useState(false);
   const pathname = usePathname();
 
+  // const links = [
+  //   { href: "/", label: "Home" },
+  //   { href: "/about-us", label: "About us" },
+  //   // { href: "/services", label: "Services" },
+  //   { label: "Services", dropdown: true },
+  //   { href: "/contact", label: "Contact" },
+  // ];
+
   const links = [
     { href: "/", label: "Home" },
     { href: "/about-us", label: "About us" },
-    { href: "/services", label: "Services" },
-    // { label: "Services", dropdown: true },
+    { 
+      label: "Services", 
+      dropdown: true, 
+      options: [
+        { href: "/services/web-development", label: "Web Development" },
+        { href: "/services/development", label: "Development" },
+        { href: "/services/marketing", label: "Marketing" },
+      ]
+    },
     { href: "/contact", label: "Contact" },
   ];
+  
 
   const servicesLinks = [
-    { href: "/web-development", label: "Web Development" },
+    // { href: "/web-development", label: "Web Development" },
     { href: "/mob-development", label: "Mobile Development" },
     { href: "/services/service3", label: "UI/UX Design" },
     { href: "/zoho-crm", label: "Zoho CRM" },

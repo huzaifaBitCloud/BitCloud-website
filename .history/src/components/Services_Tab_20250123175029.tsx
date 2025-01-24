@@ -128,7 +128,7 @@ const Services_Tab: React.FC = () => {
     },
     {
       title: "Payroll Management",
-      image: "/images/payrol.jpeg",
+      image: "/images/apyrol.jpeg",
       description:
         "Ensure timely and accurate payroll processing with our reliable payroll management services.",
     },

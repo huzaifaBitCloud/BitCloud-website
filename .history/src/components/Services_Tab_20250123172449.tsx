@@ -37,19 +37,19 @@ const Services_Tab: React.FC = () => {
     },
     {
       title: "Custom Web Applications",
-      image: "/images/custom web design.png",
+      image: "/images/cross-platform.jpg",
       description:
         "Develop scalable and custom web apps tailored to your unique business requirements.",
     },
     {
       title: "E-Commerce Development",
-      image: "/images/e-commerce solutions.jpg",
+      image: "/images/cross-platform.jpg",
       description:
         "Launch your online store with secure, user-friendly, and scalable e-commerce solutions.",
     },
     {
       title: "Web Performance Optimization",
-      image: "/images/web performance.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Enhance your website's speed, performance, and SEO rankings with our optimization services.",
     },
@@ -58,25 +58,25 @@ const Services_Tab: React.FC = () => {
   const zohoServices = [
     {
       title: "Zoho CRM Setup",
-      image: "/images/zoho1.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Streamline your customer relationship management process with Zoho CRM implementation.",
     },
     {
       title: "Zoho Creator Customization",
-      image: "/images/zoho2n.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Build custom workflows and applications with Zoho Creator to suit your business needs.",
     },
     {
       title: "Zoho Analytics Integration",
-      image: "/images/zoho3.png",
+      image: "/images/cross-platform.jpg",
       description:
         "Visualize and analyze your data effectively with Zoho Analytics for informed decision-making.",
     },
     {
       title: "Zoho One Implementation",
-      image: "/images/zoho4.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Empower your team with an integrated suite of Zoho applications tailored for your business.",
     },
@@ -84,25 +84,25 @@ const Services_Tab: React.FC = () => {
   const uiUxDesign = [
     {
       title: "User-Centered Design",
-      image: "/images/user.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Design interfaces that are intuitive and align with user expectations to improve usability.",
     },
     {
       title: "Wireframes & Prototyping",
-      image: "/images/wireframe.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Bring your ideas to life with interactive wireframes and prototypes before development.",
     },
     {
       title: "Visual Design",
-      image: "/images/visual.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Create visually appealing designs with attention to typography, color theory, and layout.",
     },
     {
       title: "Usability Testing",
-      image: "/images/usablity.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Test your designs with real users to identify and resolve usability challenges.",
     },
@@ -110,25 +110,25 @@ const Services_Tab: React.FC = () => {
   const financeServices = [
     {
       title: "Accounting & Bookkeeping",
-      image: "/images/acc1.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Maintain accurate financial records with our reliable accounting and bookkeeping services.",
     },
     {
       title: "Tax Planning & Compliance",
-      image: "/images/acc2.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Stay compliant with tax regulations and optimize your tax planning strategies.",
     },
     {
       title: "Financial Advisory",
-      image: "/images/finance1.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Get expert advice on budgeting, investments, and financial growth strategies tailored for your business.",
     },
     {
       title: "Payroll Management",
-      image: "/images/payrol.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Ensure timely and accurate payroll processing with our reliable payroll management services.",
     },

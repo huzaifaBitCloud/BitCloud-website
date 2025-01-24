@@ -116,19 +116,19 @@ const Services_Tab: React.FC = () => {
     },
     {
       title: "Tax Planning & Compliance",
-      image: "/images/acc2.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Stay compliant with tax regulations and optimize your tax planning strategies.",
     },
     {
       title: "Financial Advisory",
-      image: "/images/finance1.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Get expert advice on budgeting, investments, and financial growth strategies tailored for your business.",
     },
     {
       title: "Payroll Management",
-      image: "/images/payrol.jpeg",
+      image: "/images/cross-platform.jpg",
       description:
         "Ensure timely and accurate payroll processing with our reliable payroll management services.",
     },

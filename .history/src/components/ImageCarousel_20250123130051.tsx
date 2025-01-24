@@ -7,12 +7,7 @@ import "../components/styling/ImageCarousel.css"
 
 const images = [
   {
-    itemImageSrc: "/images/p1.avif",
-    title: 'Welcome to BitCloud Solutions!',
-    alt: 'Image 3'
-  },
-  {
-    itemImageSrc: "/images/contact-image.jpeg",
+    itemImageSrc: "/images/third-party.jpg",
     title: 'Welcome to BitCloud Solutions!',
     alt: 'Image 1',
   },
@@ -21,6 +16,11 @@ const images = [
     title: 'Welcome to BitCloud Solutions!',
     alt: 'Image 2'
   },
+  {
+    itemImageSrc: "/images/p1.avif",
+    title: 'Welcome to BitCloud Solutions!',
+    alt: 'Image 3'
+  }
 ];
 
 const itemTemplate = (item) => {

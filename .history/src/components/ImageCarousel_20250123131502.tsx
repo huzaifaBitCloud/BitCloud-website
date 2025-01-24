@@ -3,24 +3,26 @@
 import React from 'react';
 import { Galleria } from 'primereact/galleria';
 import "../components/styling/ImageCarousel.css"
+import { classNames } from 'primereact/utils';
 
 
 const images = [
   {
-    itemImageSrc: "/images/p1.avif",
-    title: 'Welcome to BitCloud Solutions!',
-    alt: 'Image 3'
-  },
-  {
-    itemImageSrc: "/images/contact-image.jpeg",
+    itemImageSrc: "/images/responsive web image.png",
     title: 'Welcome to BitCloud Solutions!',
     alt: 'Image 1',
+    className: 'opacity-100'
   },
   {
     itemImageSrc: "/images/web-developer.jpg",
     title: 'Welcome to BitCloud Solutions!',
     alt: 'Image 2'
   },
+  {
+    itemImageSrc: "/images/p1.avif",
+    title: 'Welcome to BitCloud Solutions!',
+    alt: 'Image 3'
+  }
 ];
 
 const itemTemplate = (item) => {

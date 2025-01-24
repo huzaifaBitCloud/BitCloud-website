@@ -126,19 +126,18 @@ const About = () => {
         {/* Why Choose Us */}
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">Why Choose Us?</h2>
-          <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            At <strong>BitCloud Solution</strong>, we pride ourselves on
-            delivering exceptional results through a combination of expertise,
-            innovation, and dedication. Our team of skilled professionals
-            ensures top-quality solutions tailored to your unique business
-            needs. We focus on building long-term relationships by providing
-            reliable, timely, and cost-effective services. With a commitment to
-            excellence and a customer-first approach, we strive to exceed
-            expectations and help your business thrive in the digital landscape.
-            Choose us for a partner you can trust to turn your vision into
-            reality.
+          <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto text-justify">
+            At BitCloud Solution, we pride ourselves on delivering exceptional
+            results through a combination of expertise, innovation, and
+            dedication. Our team of skilled professionals ensures top-quality
+            solutions tailored to your unique business needs. We focus on
+            building long-term relationships by providing reliable, timely, and
+            cost-effective services. With a commitment to excellence and a
+            customer-first approach, we strive to exceed expectations and help
+            your business thrive in the digital landscape. Choose us for a
+            partner you can trust to turn your vision into reality.
           </p>
-          {/* <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto"></p> */}
+          <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto"></p>
         </div>
       </div>
 

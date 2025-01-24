@@ -7,12 +7,7 @@ import "../components/styling/ImageCarousel.css"
 
 const images = [
   {
-    itemImageSrc: "/images/p1.avif",
-    title: 'Welcome to BitCloud Solutions!',
-    alt: 'Image 3'
-  },
-  {
-    itemImageSrc: "/images/contact-image.jpeg",
+    itemImageSrc: "/images/p2.avif",
     title: 'Welcome to BitCloud Solutions!',
     alt: 'Image 1',
   },
@@ -21,12 +16,17 @@ const images = [
     title: 'Welcome to BitCloud Solutions!',
     alt: 'Image 2'
   },
+  {
+    itemImageSrc: "/images/p1.avif",
+    title: 'Welcome to BitCloud Solutions!',
+    alt: 'Image 3'
+  }
 ];
 
 const itemTemplate = (item) => {
   return (
     <div className="image-container" style={{ width: '100%', textAlign: 'center' }}>
-      <img src={item.itemImageSrc} alt={item.alt} style={{ width: '100%', display: 'block' }} />
+      <img src={item.itemImageSrc} alt={item.alt} style={{ width: '90%', display: 'block' }} />
 
       <div key={`${item.itemImageSrc}-heading`} className="carousel-text-heading">
         {item.title}

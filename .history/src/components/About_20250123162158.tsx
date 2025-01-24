@@ -93,12 +93,11 @@ const About = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">Our Mission</h2>
           <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            At <strong>BitCloud Solution</strong>, we are committed to
-            simplifying the construction process by offering precise and
-            detailed estimates, ensuring you stay within budget and avoid
-            unnecessary costs. We strive to help homeowners, builders, and
-            contractors make informed decisions by delivering fast and accurate
-            quotes.
+            At <strong>BitCloud Solution</strong>, we are committed to simplifying the
+            construction process by offering precise and detailed estimates,
+            ensuring you stay within budget and avoid unnecessary costs. We
+            strive to help homeowners, builders, and contractors make informed
+            decisions by delivering fast and accurate quotes.
           </p>
         </div>
 
@@ -108,16 +107,15 @@ const About = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">What We Offer</h2>
           <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            We specialize in delivering cutting-edge software development
-            services tailored to meet your business needs. From scalable web and
-            mobile app development to advanced cloud solutions, we bring
-            innovative ideas to life. Our expertise spans across modern
-            technologies, ensuring efficient, secure, and user-friendly
-            products. We also provide IT consultancy, system integration, and
-            custom solutions to enhance your business operations. With a
-            customer-centric approach, we are committed to driving your success
-            with reliable and result-driven services. Partner with us for
-            transformative digital experiences!
+            We specialize in delivering cutting-edge software development services tailored to
+            meet your business needs. From scalable web and mobile app
+            development to advanced cloud solutions, we bring innovative ideas
+            to life. Our expertise spans across modern technologies, ensuring
+            efficient, secure, and user-friendly products. We also provide IT
+            consultancy, system integration, and custom solutions to enhance
+            your business operations. With a customer-centric approach, we are
+            committed to driving your success with reliable and result-driven
+            services. Partner with us for transformative digital experiences!
           </p>
         </div>
 
@@ -126,19 +124,17 @@ const About = () => {
         {/* Why Choose Us */}
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">Why Choose Us?</h2>
-          <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            At <strong>BitCloud Solution</strong>, we pride ourselves on
-            delivering exceptional results through a combination of expertise,
-            innovation, and dedication. Our team of skilled professionals
-            ensures top-quality solutions tailored to your unique business
-            needs. We focus on building long-term relationships by providing
-            reliable, timely, and cost-effective services. With a commitment to
-            excellence and a customer-first approach, we strive to exceed
-            expectations and help your business thrive in the digital landscape.
-            Choose us for a partner you can trust to turn your vision into
-            reality.
+          <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto text-justify">
+          At BitCloud Solution, we stand out for our unwavering commitment to quality and excellence. Here’s why clients trust us:
+
+Expertise That Delivers: Our team of seasoned professionals excels in the latest technologies to provide innovative and efficient solutions.
+Client-Centric Approach: We prioritize your needs, ensuring tailored solutions that align with your business goals.
+Reliability You Can Count On: With a track record of successful projects, we consistently deliver on time and within budget.
+Cutting-Edge Innovation: We embrace the latest trends to keep your business ahead in the competitive digital landscape.
+Transparent Communication: We maintain open lines of communication at every stage of the project to ensure your satisfaction.
+When you partner with BitCloud Solution, you choose a trusted ally dedicated to driving your success in the digital world.
           </p>
-          {/* <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto"></p> */}
+          <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto"></p>
         </div>
       </div>
 

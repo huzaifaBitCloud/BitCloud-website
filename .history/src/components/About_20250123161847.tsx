@@ -93,12 +93,11 @@ const About = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">Our Mission</h2>
           <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            At <strong>BitCloud Solution</strong>, we are committed to
-            simplifying the construction process by offering precise and
-            detailed estimates, ensuring you stay within budget and avoid
-            unnecessary costs. We strive to help homeowners, builders, and
-            contractors make informed decisions by delivering fast and accurate
-            quotes.
+            At <strong>BitCloud Solution</strong>, we are committed to simplifying the
+            construction process by offering precise and detailed estimates,
+            ensuring you stay within budget and avoid unnecessary costs. We
+            strive to help homeowners, builders, and contractors make informed
+            decisions by delivering fast and accurate quotes.
           </p>
         </div>
 
@@ -108,16 +107,15 @@ const About = () => {
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">What We Offer</h2>
           <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            We specialize in delivering cutting-edge software development
-            services tailored to meet your business needs. From scalable web and
-            mobile app development to advanced cloud solutions, we bring
-            innovative ideas to life. Our expertise spans across modern
-            technologies, ensuring efficient, secure, and user-friendly
-            products. We also provide IT consultancy, system integration, and
-            custom solutions to enhance your business operations. With a
-            customer-centric approach, we are committed to driving your success
-            with reliable and result-driven services. Partner with us for
-            transformative digital experiences!
+            We specialize in delivering cutting-edge software development services tailored to
+            meet your business needs. From scalable web and mobile app
+            development to advanced cloud solutions, we bring innovative ideas
+            to life. Our expertise spans across modern technologies, ensuring
+            efficient, secure, and user-friendly products. We also provide IT
+            consultancy, system integration, and custom solutions to enhance
+            your business operations. With a customer-centric approach, we are
+            committed to driving your success with reliable and result-driven
+            services. Partner with us for transformative digital experiences!
           </p>
         </div>
 
@@ -126,19 +124,27 @@ const About = () => {
         {/* Why Choose Us */}
         <div className="text-center">
           <h2 className="text-3xl font-bold my-6">Why Choose Us?</h2>
-          <p className="my-7 text-lg leading-relaxed max-w-3xl mx-auto">
-            At <strong>BitCloud Solution</strong>, we pride ourselves on
-            delivering exceptional results through a combination of expertise,
-            innovation, and dedication. Our team of skilled professionals
-            ensures top-quality solutions tailored to your unique business
-            needs. We focus on building long-term relationships by providing
-            reliable, timely, and cost-effective services. With a commitment to
-            excellence and a customer-first approach, we strive to exceed
-            expectations and help your business thrive in the digital landscape.
-            Choose us for a partner you can trust to turn your vision into
-            reality.
+          <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto text-justify">
+            <strong>Accuracy:</strong> Our estimates are detailed and reliable,
+            so you know exactly what to expect.
+            {/* <br /> */}
+            <strong>Expertise:</strong> We leverage years of industry experience
+            to deliver accurate results.
+            <br />
+            <strong>Customer-Centric:</strong> Your needs are our priority. We
+            work with you to customize estimates based on your unique
+            requirements.
+            <br />
+            <strong>Fast Turnaround:</strong> We value your time. Our
+            streamlined process ensures you receive your estimate promptly.
+            <br />
+            <strong>Our Vision:</strong> We aim to become the go-to solution for
+            construction estimates across the industry. With our commitment to
+            quality and precision, we want to empower our clients to build
+            confidently, knowing that their project costs are well understood
+            from the start.
           </p>
-          {/* <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto"></p> */}
+          <p className="my-7 text-lg leading-relaxed max-w-4xl mx-auto"></p>
         </div>
       </div>
 
