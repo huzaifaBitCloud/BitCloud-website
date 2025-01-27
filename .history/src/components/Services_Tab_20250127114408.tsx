@@ -57,7 +57,7 @@ const Services_Tab: React.FC = () => {
 
   const zohoServices = [
     {
-      title: "Zoho CRM Setup",
+      title: "Zoho CRM",
       image: "/images/zoho1.jpeg",
       description:
         "Streamline your customer relationship management process with Zoho CRM implementation.",
@@ -79,18 +79,6 @@ const Services_Tab: React.FC = () => {
       image: "/images/zoho4.jpeg",
       description:
         "Empower your team with an integrated suite of Zoho applications tailored for your business.",
-    },
-    {
-      title: "Zoho Books",
-      image: "/images/zohoBook.png",
-      description:
-        "Simplify your financial management with Zoho Books, offering seamless invoicing, expense tracking, and tax compliance.",
-    },
-    {
-      title: "Zoho Campaigns",
-      image: "/images/zohoCam.png",
-      description:
-        "Elevate your email marketing with Zoho Campaigns, delivering personalized campaigns and insightful analytics effortlessly.",
     },
   ];
   const uiUxDesign = [
@@ -152,35 +140,35 @@ const Services_Tab: React.FC = () => {
       title: "Mobile App Development",
       description:
         "We create feature-rich mobile applications tailored to your business needs, ensuring top performance and seamless user experience.",
-      image: "/images/pic2.png",
+      image: "/images/mobile.png",
     },
     {
       id: "#web",
       title: "Web Application Development",
       description:
         "Our web applications are built with modern technologies, providing scalability, responsiveness, and user-friendly interfaces.",
-      image: "/images/webPerpul.png",
+      image: "/images/web.jpg",
     },
     {
       id: "#zoho",
       title: "Zoho CRM Integration",
       description:
         "We specialize in Zoho CRM integrations to help you streamline your business operations and enhance customer relationship management.",
-      image: "/images/pic1.png",
+      image: "/images/zoho.jpg",
     },
     {
       id: "#ui",
       title: "UI/UX Design",
       description:
         "Our design team crafts intuitive and visually stunning interfaces to provide exceptional user experiences for your applications.",
-      image: "/images/pic4.png",
+      image: "/images/ui.jpg",
     },
     {
       id: "#finance",
       title: "Finance Solutions",
       description:
         "We deliver tailored financial solutions to help manage your accounts, optimize resources, and achieve business goals.",
-      image: "/images/pic5.png",
+      image: "/images/finance.jpg",
     },
   ];
 
@@ -198,7 +186,7 @@ const Services_Tab: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 flex justify-center py-12 lg:grid-cols-12 h-[100%]">
           <div className="w-[50%] mx-auto flex flex-col items-center justify-center text-center">
-            <h1 className="mb-4 text-xl font-extrabold leading-none text-white mt-4 sm:mt-0 md:text-3xl xl:text-4xl zoomIn">
+            <h1 className="mb-4 text-xl font-extrabold leading-none md:text-3xl xl:text-4xl text-white zoomIn">
               Empowering your business with seamless web, mobile, and Zoho
               solutions, while keeping your finances in perfect balance.
             </h1>
@@ -223,7 +211,7 @@ const Services_Tab: React.FC = () => {
             </div>
             <div className="card-button-section">
               <a href={service?.id} className="learn-more-button">
-                View More
+                Learn More
               </a>
             </div>
           </div>

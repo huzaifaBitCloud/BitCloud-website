@@ -33,7 +33,7 @@ const Achievements = () => {
             <div className="flex justify-center items-center mb-4">
               <FaUserGraduate className="w-12 h-12 text-gray-500" />
             </div>
-            <h3 className="text-3xl font-bold text-gray-900">150+</h3>
+            <h3 className="text-3xl font-bold text-gray-900">164+</h3>
             <p className="text-gray-600 mt-2 text-lg">Trained Users</p>
           </div>
         </div>

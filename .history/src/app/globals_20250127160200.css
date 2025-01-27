@@ -17,9 +17,9 @@
   border-radius: 15px;
   background: linear-gradient(180deg, #e7ebf0, #f5f7fa 90%);
 }
-/* body {
+body {
   font-family: "Poppins";
-} */
+}
 :root {
   /* --color-primary: #e9f2e4;
     --color-secondary: #f5f7fa;

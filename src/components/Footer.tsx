@@ -73,12 +73,12 @@ const Footer = () => {
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           {/* Logo Section */}
           <div className="flex items-center mb-4 md:mb-0 md:ml-6">
-            <Link href='/'>
-            <img
-              src="/images/logo.svg"
-              alt="BitCloud Logo"
-              className="h-14 mr-3"
-            />
+            <Link href="/">
+              <img
+                src="/images/logo.svg"
+                alt="BitCloud Logo"
+                className="h-14 mr-3"
+              />
             </Link>
           </div>
 
@@ -106,6 +106,8 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/bitcloud-solution-software/"
                 aria-label="LinkedIn"
                 className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin className="w-6 h-6" />
               </Link>
@@ -113,6 +115,8 @@ const Footer = () => {
                 href="http://www.youtube.com/@BitCloudSolution"
                 aria-label="YouTube"
                 className="text-gray-500 hover:text-red-600 dark:hover:text-red-400"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaYoutube className="w-6 h-6" />
               </Link>

@@ -83,7 +83,7 @@ const Contact = () => {
         {/* Content */}
         <div className="relative z-10 flex justify-center max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 lg:py-28 lg:grid-cols-12">
           <div className="w-[70%] mx-auto place-self-center flex flex-col items-center justify-center text-center px-auto">
-            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white mt-4 sm:mt-0 md:text-5xl xl:text-6xl">
+            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
               Get In Touch
             </h1>
           </div>
@@ -122,10 +122,10 @@ const Contact = () => {
       <section className="bg-white">
         <div className="py-8 lg:py-16 px-4 mx-auto w-[90%] grid md:grid-cols-2 gap-10">
           <div className="flex flex-col items-center">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center  text-black">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-black">
               Message Us
             </h2>
-            <p className="mb-8 lg:mb-12 font-light  text-black w-[60%] mt-10 text-justify">
+            <p className="mb-8 lg:mb-12 font-light text-justify text-black w-[60%] mt-10">
               At BitCloud Solution, we value your inquiries and feedback.
               Whether you have questions about our services, need assistance
               with a project, or want to explore partnership opportunities,
@@ -206,6 +206,22 @@ const Contact = () => {
             </button>
           </form>
         </div>
+
+        {/* <div className="py-6 px-4 sm:px-6 md:px-10 lg:pl-14 text-left">
+          <h1 className="font-bold text-lg sm:text-xl md:text-2xl mb-2">
+            Lahore, Pakistan
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg">
+            naeem@bitcloudsolution.com
+          </p>
+        </div> */}
+
+        {/* <div className="py-6 justify-start pl-14">
+          <h1 className="font-bold text-xl flex ">
+            Lahore, Pakistan
+          </h1>
+          <p className="flex ">naeem@bitcloudsolution.com</p>
+        </div> */}
       </section>
     </div>
   );

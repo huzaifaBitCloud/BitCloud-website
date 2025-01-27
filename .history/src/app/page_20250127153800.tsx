@@ -24,7 +24,7 @@ export default function Home() {
       <div className="my-10 border-t">
         <WhyUs />
       </div>
-
+      
       {/* <div className="mt-10 mb-10">
         <Footer />
       </div> */}
